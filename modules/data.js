@@ -156,6 +156,64 @@ let data={
             let child=createDomElement('vis','p',`//returns 'hello'`);
             element.appendChild(child)
             }
+    },
+    kGeneral:{
+        tag:'t',
+        name:"- GENERAL FUNCTIONS - <div class='topic'></div>"
+    },
+    kSetTimeout:{
+        tag:'b',
+        id:'setTimeout',
+        name:`setTimeout()`,
+        br:'<br>',
+        form_f:'FORM:',
+        form:`setTimeout(()=>//dostuff,time)`,
+        comment:`//Set a time that upon reachin the time parameter runs the callback function`,
+        returns:'RETURN: - ',
+        br2:'<br>',
+        example_f:'EXAMPLE:',
+        example: `' setTimeout(()=>console.log('Hello'),1000);`,
+        br3:'<br>',
+        vis:function (element){
+            let child=createDomElement('vis','p',`//Logs 'Hello' to console after 1 second.'`);
+            element.appendChild(child)
+            }
+    },
+    kSetInterval:{
+        tag:'b',
+        id:'setInterval',
+        name:`setInterval()`,
+        br:'<br>',
+        form_f:'FORM:',
+        form:`setInterval(()=>//dostuff,time)`,
+        comment:`//Runs the callback function every 'time' seconds. Loops endlessly`,
+        returns:'RETURN: - ',
+        br2:'<br>',
+        example_f:'EXAMPLE:',
+        example: `' setInterval(()=>console.log('Hello'),2000);`,
+        br3:'<br>',
+        vis:function (element){
+            let child=createDomElement('vis','p',`//Logs 'Hello' to console every 2 seconds.'`);
+            element.appendChild(child)
+            }
+    },
+    kClearInterval:{
+        tag:'b',
+        id:'clearInterval',
+        name:`clearInterval()`,
+        br:'<br>',
+        form_f:'FORM:',
+        form:`cetInterval(intervalName)`,
+        comment:`//Stops the interval.`,
+        returns:'RETURN: - ',
+        br2:'<br>',
+        example_f:'EXAMPLE:',
+        example: `' clearInterval(intervalName);`,
+        br3:'<br>',
+        vis:function (element){
+            let child=createDomElement('vis','p',`//Stops intervalName from running further'`);
+            element.appendChild(child)
+            }
     }
     
     
