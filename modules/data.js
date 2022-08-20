@@ -47,7 +47,7 @@ let data = {
       element.appendChild(child);
     },
   },
-  kFind: {
+  kFindIndex: {
     tag: "b",
     id: "findIndex",
     name: `.findIndex()`,
@@ -64,6 +64,30 @@ let data = {
     br3: "<br>",
     vis: function (element) {
       let child = createDomElement("vis", "p", `//returns 1;`);
+      element.appendChild(child);
+    },
+  },
+  kSplice: {
+    tag: "b",
+    id: "Splice",
+    name: `.splice()`,
+    br: "<br>",
+    form_f: "FORM:",
+    form: `Array.splice(start,deleteCount,item1,item2,itemN);`,
+    comment: `//MODIFIES THE ARRAY. Begin at start included (if greater than length, no
+    deletion happes and behaves pike push, if negative, - that many from the end)
+    delete "deleteCount" amount of elements and add items  1, 2 ,3 N.`,
+    returns: "RETURN: returns the deleted values, even if an empty one",
+    br2: "<br>",
+    example_f: "EXAMPLE:",
+    example: `[0,1,2,3,4,5,6,7].splice(2, 3, "two", "three", "four");`,
+    br3: "<br>",
+    vis: function (element) {
+      let child = createDomElement(
+        "vis",
+        "p",
+        `//returns [2,3,4]; because  [0,1,->2,3,4<-,5,6,7]`
+      );
       element.appendChild(child);
     },
   },
