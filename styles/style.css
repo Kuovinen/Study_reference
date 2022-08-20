@@ -1,60 +1,63 @@
-:root{
-    --primary:rgb(255, 255, 255, 0.8);
-    --secondary:dodgerBlue;
-    --grey:rgb(30, 144, 255,0.6);
+:root {
+  --primary: rgb(255, 255, 255, 0.8);
+  --secondary: dodgerBlue;
+  --grey: rgb(30, 144, 255, 0.6);
 }
-body{
-    font-size:62.5%;
-    margin-bottom:5%;
+body {
+  font-size: 62.5%;
+  margin-bottom: 5%;
 }
 * {
-margin: 0;
-   padding: 0;
-   }
-body{
-    background-color:var(--secondary);;
+  margin: 0;
+  padding: 0;
 }
-h1{
-    font-size:2.5rem;
+body {
+  background-color: var(--secondary);
 }
-h2{
-    background-color:var(--primary);
-    padding:2%;
-    font-size:1.5rem;
-    position:relative;
+h1 {
+  font-size: 2.5rem;
 }
-.block{
-    background-color:var(--primary);
-    padding:2%;
-    margin-left: 1%;
-    margin-right:1%;
-    border:white solid 0.2rem;
-    border-radius: 1rem;
-}
-.name{
-    font-size: 1.2rem;
-    background-color:var(--primary);
-    border-radius: 1rem;
-    padding:1rem;
+h2 {
+  background-color: var(--primary);
+  padding: 2%;
 
+  font-size: 1.5rem;
+  position: relative;
 }
-.comment,.form_f{
-    font-style:italic;
-    color:var(--grey);
+.block {
+  font-size: 1.5rem;
+  background-color: var(--primary);
+  padding: 2%;
+  margin-left: 1%;
+  margin-right: 1%;
+  border: white solid 0.2rem;
+  border-radius: 1rem;
 }
-.vis{
-    color:var(--grey);
+.name {
+  font-weight: 1000;
+  font-size: 1.2rem;
+  background-color: var(--primary);
+  border-radius: 1rem;
+  padding: 1rem;
 }
-.example_f{
-    font-weight: bold;
-    color:var(--grey);
+.comment,
+.form_f {
+  font-style: italic;
+  color: var(--grey);
 }
-.topic{
-    height:50%;
-    background-color:var(--secondary);
-    width:3.7%;
-    display:inline-block;
-    position:absolute;
-    right:5%;
-    border-radius: 1rem;
+.vis {
+  color: var(--grey);
+}
+.example_f {
+  font-weight: bold;
+  color: var(--grey);
+}
+.topic {
+  height: 50%;
+  background-color: var(--secondary);
+  width: 3.7%;
+  display: inline-block;
+  position: absolute;
+  right: 5%;
+  border-radius: 1rem;
 }
