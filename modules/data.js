@@ -47,6 +47,26 @@ let data = {
       element.appendChild(child);
     },
   },
+  kFind: {
+    tag: "b",
+    id: "findIndex",
+    name: `.findIndex()`,
+    br: "<br>",
+    form_f: "FORM:",
+    form: `Array.findIndex(element=>element ==='value');`,
+    comment: `//The findIndex() method executes a user-supplied callback function on
+                each element of the array, in order, and returns the index of the first 
+                element that passes the functions condition. `,
+    returns: "RETURN: The index of first element that fits or -1 if none do",
+    br2: "<br>",
+    example_f: "EXAMPLE:",
+    example: `[{id:'a'},{id:'b'},{id:'c'}].find(element=>{return element.id==='b'});`,
+    br3: "<br>",
+    vis: function (element) {
+      let child = createDomElement("vis", "p", `//returns 1;`);
+      element.appendChild(child);
+    },
+  },
 
   kMap: {
     tag: "b",
